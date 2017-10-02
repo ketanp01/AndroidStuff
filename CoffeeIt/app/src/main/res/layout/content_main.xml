@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.ketanpandey.coffeeit.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <ViewFlipper
+                    android:id="@+id/view_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/c1"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/c2"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/c3"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/c4"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/c5"
+                        android:scaleType="centerCrop" />
+
+
+                </ViewFlipper>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                    <EditText
+                        android:id="@+id/name_field"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/HeaderTextStyle"
+                            android:text="@string/toppings" />
+
+                        <CheckBox
+                            android:id="@+id/whipped_cream_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="24dp"
+                            android:text="@string/whipped_cream"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/chocolate_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="24dp"
+                            android:text="@string/chocolate"
+                            android:textSize="16sp" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/HeaderTextStyle"
+                            android:text="@string/quantity" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:onClick="decrement"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/quantity_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:text="@string/initial_quantity_value"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:onClick="increment"
+                                android:text="+" />
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="submitOrder"
+                            android:text="@string/order"
+                            android:typeface="monospace"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
