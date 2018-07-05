@@ -14,4 +14,4 @@ Users need to login in order to use the app.
 
 ### Sunshine
 
-This app is the project for the Udacity course [Developing Android Apps: Android Fundamentals]
+This app is the project for the Udacity course [Developing Android Apps: Android Fundamentals](https://www.udacity.com/course/ud853).
