@@ -15,3 +15,11 @@ Users need to login in order to use the app.
 ### Sunshine
 
 This app is the project for the Udacity course [Developing Android Apps: Android Fundamentals](https://www.udacity.com/course/ud853).
+
+### Emojify
+
+This is the app build for the Libraries lesson of the [Advanced Android App Development course on Udacity](https://www.udacity.com/course/advanced-android-app-development--ud855).
+
+### Shushme
+
+This is the yet another app made for the Places lesson of the [Advanced Android App Development course on Udacity](https://www.udacity.com/course/advanced-android-app-development--ud855).
